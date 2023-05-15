@@ -1,10 +1,10 @@
 :root {
   --blanco:#fff;
-  --typo-1:'Fira Sans Condensed',Arial;
-  --typo-2:Arial;
-  --color-1:#FB3B32;
+  --typo-1:'Poppins', sans-serif;
+  --typo-2:'Lora', serif;
+  --color-1:#A48F69;
   --color-2:#FBEDD4;
-  --bs-border-color:#FB3B32; !important;
+  --bs-border-color:#A48F69; !important;
 }
 
 body {
@@ -12,14 +12,14 @@ body {
   background-color: black;
   max-width:414px;
   margin: 0 auto;
-  color: black;
+  color: white;
   position: relative;
 }
 a {text-decoration: none;color:var(--color-2);}
 h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 * {border-color: var(--color-1);}
 .cuerpo {
-  background-color: var(--color-2);
+  background-color: black;
 }
 .descripcion {
   font-size: .85rem;
@@ -36,29 +36,36 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
   user-select:none;
 }
 .item-titulo {
-  color: var(--color-1);
+  color: white;
   font-weight: bold;
   letter-spacing: 1px;
 }
 .item-precio {
   text-align:right;
+  color: var(--color-1);
 }
 .item-precio::before {
   content: '$';
   padding-right: .2em;
 }
-h1 {line-height: 1em;}
+h1 {
+  font-family: var(--typo-2);
+  font-size: calc(1.2rem + 1.5vw) !important;
+  line-height: 1em;
+}
 h1.deco {
   position: relative;
-  background-color: var(--color-1);
-  color: var(--color-2);
+  /* background-color: var(--color-1); */
+  color: var(--color-1);
   line-height: 1.25em;
+  border-top: 3px dotted var(--color-1);
+  border-bottom: 3px dotted var(--color-1);
 }
 .top-bar {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: var(--color-2);
+  background-color: black;
 }
 img {
   filter: grayscale(10) contrast(10) invert(10);
@@ -102,11 +109,12 @@ img {
   line-height: 1em;
   border: 1px solid black;
   border-radius: .5em;
-  padding: 1.5em .25em .75em .25em;
+  padding: 1em;
   background-color: var(--color-1);
   font-size: .75rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white !important;
 }
 .swiper-button-next {
   right: 3px !important;
@@ -114,13 +122,19 @@ img {
 .swiper-button-prev {
   left: 3px !important;
 }
-.swiper-slide img {
+.swiper-slide a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* .swiper-slide img {
   display: block;
   margin: 0 auto;
   width: 35px;
   padding-bottom: .5em;
   filter: none;  
-}
+} */
 .swiper-button-next, .swiper-button-prev {
   color: black !important;
   background: var(--color-2);

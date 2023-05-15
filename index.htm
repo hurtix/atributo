@@ -2,13 +2,14 @@
 <html>
 
 <head>
-  <title>Menu María Felix</title>
+  <title>Atributo</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
@@ -32,68 +33,22 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="#entradas">
-                <img src="img/icono/icono-12.svg" alt="icono" width="50">
-                Entradas
+                Bebidas Calientes
               </a>
             </div>
             <div class="swiper-slide">
               <a href="#sopas">
-                <img src="img/icono/icono-23.svg" alt="icono" width="50">
-                Sopas
+                Bebidas Frías
               </a>
             </div>
             <div class="swiper-slide">
               <a href="#pa-taquiar">
-                <img src="img/icono/icono-27.svg" alt="icono" width="50">
-                Pa' taquiar
+                Filtrados
               </a>
             </div>
             <div class="swiper-slide">
               <a href="#chimichangas">
-                <img src="img/icono/icono-16.svg" alt="icono" width="50">
-                Chimichangas
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#para-compartir">
-                <img src="img/icono/icono-32.svg" alt="icono" width="50">
-                Para compartir
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#tampiquenhas-burritos">
-                <img src="img/icono/icono-25.svg" alt="icono" width="50">
-                Tampiqueñas y burritos
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#quesadillas">
-                <img src="img/icono/icono-34.svg" alt="icono" width="50">
-                Quesadillas
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#para-los-chavitos">
-                <img src="img/icono/icono-15.svg" alt="icono" width="50">
-                Para los chavitos
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#postres">
-                <img src="img/icono/icono-9.svg" alt="icono" width="50">
-                Postres
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#bebidas">
-                <img src="img/icono/icono-3.svg" alt="icono" width="50">
-                Bebidas
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#menu-del-dia">
-                  <img src="img/icono/icono-45.svg" alt="icono" width="50">
-                Menú del día
+                Acompañantes
               </a>
             </div>
           </div>
@@ -106,31 +61,31 @@
 
   <!-- ENTRADAS -->
   <div id="entradas" class="container">
-    <h1 class="text-center my-5 deco">ENTRADAS</h1>
+    <h1 class="text-center my-5 deco">BEBIDAS CALIENTES</h1>
     <div class="row">
       <div class="col-md-12 col-sm-12">
         <div class="item-producto">
           <div class="d-grid">
-            <span class="item-titulo">JALAPEÑOS (2 und)</span>
-            <span class="item-precio">20.000</span>
+            <span class="item-titulo">Espresso Sencillo</span>
+            <span class="item-precio">5.000</span>
           </div>
-          <span class="descripcion">Rellenos de queso y chorizo, maduro y queso con guacamole.</span>
+          <span class="descripcion"></span>
         </div>
 
         <div class="item-producto">
           <div class="d-grid">
-            <span class="item-titulo">ESQUITES</span>
-            <span class="item-precio">16.000</span>
+            <span class="item-titulo">Espresso Doble</span>
+            <span class="item-precio">7.000</span>
           </div>
           <span class="descripcion"></span>
         </div>
       
       <div class="item-producto">
         <div class="d-grid">
-          <span class="item-titulo">TOTOPOS GRATINADOS</span>
-          <span class="item-precio">18.000</span>
+          <span class="item-titulo">Aromática</span>
+          <span class="item-precio">7.000</span>
         </div>
-        <span class="descripcion">Con queso y bañados en salsa de jitomate. Acompañado de sus salsas.</span>
+        <span class="descripcion"></span>
       </div>
 
       <div class="item-producto">
@@ -756,9 +711,9 @@
   var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     loop: true,
-    slidesPerView: 5,
+    slidesPerView: 3,
     spaceBetween: 5,
-    // centeredSlides: true,
+    centeredSlides: true,
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
