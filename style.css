@@ -18,8 +18,11 @@ body {
 a {text-decoration: none;color:var(--color-2);}
 h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 * {border-color: var(--color-1);}
+.color-1 {color: var(--color-1);}
+.typo-2 {font-family: var(--typo-2);}
 .cuerpo {
   background-color: black;
+  padding: 0 1em;
 }
 .descripcion {
   font-size: .85rem;
@@ -47,6 +50,10 @@ h1,h2,h3,h4,h5,h6 {color:var(--color-1);font-weight:bold;}
 .item-precio::before {
   content: '$';
   padding-right: .2em;
+}
+.grilla-3 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 h1 {
   font-family: var(--typo-2);
